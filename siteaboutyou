@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f1e8">
+    <title>Мои ссылки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #20241f;
+            --muted: #696d63;
+            --paper: #f5f1e8;
+            --lime: #c8f169;
+            --line: #dedbcf;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px 20px;
+            display: grid;
+            place-items: center;
+            color: var(--ink);
+            background-color: var(--paper);
+            background-image: radial-gradient(#d8d3c5 0.8px, transparent 0.8px);
+            background-size: 18px 18px;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        main {
+            width: min(100%, 480px);
+            padding: 34px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: rgba(255, 254, 249, 0.94);
+            box-shadow: 8px 8px 0 #dedbcf;
+            animation: arrive 500ms ease-out both;
+        }
+
+        .topline {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .status {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #72bc69;
+            box-shadow: 0 0 0 3px #e3f3d9;
+        }
+
+        h1 {
+            margin: 22px 0 8px;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: clamp(38px, 10vw, 54px);
+            line-height: 0.98;
+        }
+
+        h1 span {
+            display: inline-block;
+            padding: 0 7px 4px;
+            border-radius: 7px;
+            background: var(--lime);
+            transform: rotate(-2deg);
+        }
+
+        .bio {
+            max-width: 340px;
+            margin: 18px 0 28px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .links {
+            display: grid;
+            gap: 10px;
+        }
+
+        .link {
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 0 16px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            color: var(--ink);
+            background: #fffef9;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+        }
+
+        .link:hover, .link:focus-visible {
+            border-color: var(--ink);
+            background: var(--lime);
+            transform: translateX(4px);
+        }
+
+        .link:focus-visible { outline: 3px solid #568b36; outline-offset: 3px; }
+
+        .link-name { display: flex; align-items: center; gap: 12px; }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            border-radius: 8px;
+            background: #f0eee5;
+            font-size: 14px;
+        }
+
+        .arrow { font-size: 18px; }
+
+        footer {
+            margin-top: 24px;
+            color: #8a8b80;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        @keyframes arrive {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 420px) {
+            body { padding: 18px 14px; }
+            main { padding: 26px 20px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="topline"><span class="status" aria-hidden="true"></span> на связи с вами Ashia</div>
+        <h1>Привет, я<br><span>Ash1aaa</span></h1>
+        <p>Программист и веб-разработчик</p>
+
+        <nav class="links" aria-label="Мои контакты">
+            <a class="link" href="https://discord.com/users/sansx._.
+" target="_blank" rel="noopener noreferrer">
+                <span class="link-name"><span class="icon" aria-hidden="true">D</span>Discord</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="link" href="https://t.me/
+" target="_blank" rel="noopener noreferrer">
+                <span class="link-name"><span class="icon" aria-hidden="true">↗</span>Telegram</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="link" href="https://github.com/Ash1aaa" target="_blank" rel="noopener noreferrer">
+                <span class="link-name"><span class="icon" aria-hidden="true">⌘</span>GitHub</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="link" href="https://steamcommunity.com/profiles/76561199257312271/">
+                <span class="link-name"><span class="icon" aria-hidden="true">@</span>Steam</span><span class="arrow" aria-hidden="true">↗</span>
+            </a>
+        </nav>
+
+        <footer>Наглядний пример таких сайтов</footer>
+    </main>
+</body>
+</html>
